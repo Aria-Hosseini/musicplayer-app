@@ -1,0 +1,25 @@
+{
+  "name": "music-player",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "main.js",
+  "scripts": {
+    "dev": "concurrently \"vite\" \"wait-on http://localhost:5173 && electron .\"",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "electron": "^38.0.0",
+    "vite": "^7.1.2",
+    "wait-on": "^7.2.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^7.0.1",
+    "@tailwindcss/vite": "^4.1.12",
+    "bulma": "^1.0.4",
+    "tailwindcss": "^4.1.12"
+  }
+}
